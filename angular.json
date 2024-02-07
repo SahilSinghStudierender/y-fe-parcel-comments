@@ -38,7 +38,7 @@
               "libraryName": "y-fe-parcel-comments",
               "libraryTarget": "umd"
             },
-            "deployUrl": "http://localhost:9006/"
+            "deployUrl": "http://localhost:8006/"
           },
           "configurations": {
             "production": {

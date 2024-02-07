@@ -1,1 +1,12 @@
-Hello World from Parcel!
+<div class="row">
+    <form [formGroup]="form">
+        <div class="NgxEditor__Wrapper">
+            <ngx-editor-menu [editor]="editor" [toolbar]="minimalToolbar"></ngx-editor-menu>
+            <ngx-editor [editor]="editor" formControlName="editorContent"></ngx-editor>
+        </div>
+        <small class="text-danger" *ngIf="validateFormControl()">There is no content!</small>
+    </form>
+    <div class="d-flex w-100 justify-content-end mt-2">
+        <button class="btn btn-primary" (click)="publishComment()">Comment</button>
+    </div>
+</div>
